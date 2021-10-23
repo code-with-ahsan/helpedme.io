@@ -3,6 +3,7 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
+  // mode: "jit",
   theme: {
     screens: {
       sm: "480px",
@@ -18,6 +19,9 @@ module.exports = {
       white: colors.white,
       cyan: colors.cyan,
     },
+    stroke: (theme) => ({
+      "light-blue": theme("colors.light-blue.600"),
+    }),
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
@@ -30,10 +34,11 @@ module.exports = {
       borderRadius: {
         "4xl": "2rem",
       },
+      stroke: ["hover", "focus"],
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };

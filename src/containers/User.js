@@ -1,3 +1,5 @@
+import React from "react";
+
 const User = () => {
   const user = {
     username: "ahsanayaz",
