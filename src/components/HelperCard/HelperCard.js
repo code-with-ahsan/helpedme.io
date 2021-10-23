@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
 const HelperCard = ({ user }) => {
@@ -45,7 +46,7 @@ const HelperCard = ({ user }) => {
                   height="48"
                   className="text-xs w-7 flex justify-between items-center h-7 rounded-full bg-gray-100 border-2 border-white"
                 >
-                  <div>{helpedCount <= 99 ? `+${helpedCount}` : `99+`}</div>
+                  <div>{helpedCount <= 99 ? `+${helpedCount}` : "99+"}</div>
                 </div>
               )}
             </dd>

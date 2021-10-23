@@ -1,0 +1,7 @@
+.search-input-container .name-search-list {
+  display: none;
+}
+
+.search-input-container:focus-within .name-search-list {
+  display: block;
+}
