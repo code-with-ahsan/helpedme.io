@@ -1,0 +1,21 @@
+<div
+  class="
+    app-header
+    flex
+    px-4
+    py-1
+    bg-light-blue-500
+    items-center
+    justify-between
+  "
+>
+  <a routerLink="/" class="text-white"> Helped Me ❤️</a>
+  <ng-container *ngIf="user">
+    <!-- <img
+      (click)="logOut()"
+      class ="rounded-full h-5/6 hover:opacity-50 cursor-pointer"
+      alt="user avatar"
+      [src]="user?.photoURL"
+    /> -->
+  </ng-container>
+</div>
