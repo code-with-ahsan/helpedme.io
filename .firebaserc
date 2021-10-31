@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "helpedme-e89e2"
+  },
+  "targets": {
+    "helpedme-e89e2": {
+      "hosting": {
+        "helped-me": [
+          "helpedme-e89e2"
+        ]
+      }
+    }
   }
 }
